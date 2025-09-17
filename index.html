@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Здесь должны быть три тега c сервиса Google fonts для подключения шрифтов  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
 <body>
-    <!-- ЗАДАНИЕ -->
-    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
-    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
-
     <header>
-        <span>IT-INCUBATOR</span>
+        <span>It-incubator</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
-        <h1>Новик Кирилл Сергеевич</h1>
-        <p>Начал учиться в инкубаторе, надеюсь всё будет круто! Люблю котиков, ниже прикреплю картинку с котиком</p>
-        <img src="https://i.pinimg.com/236x/c8/cc/24/c8cc24bba37a25c009647b8875aae0e3.jpg" alt="Cats">
+    <section class="main-section" data-cy="hw1-section-main-pre">
+        <h1 class="main-title">Новик Кирилл Сергеевич</h1>
+        <p class="main-text">Начал учиться в инкубаторе, надеюсь всё будет круто! Люблю котиков, ниже прикреплю картинку с котиком</p>
+        <img class="main-image" src="https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png" alt="Cats">
     </section>
 
-    <section data-cy="hw1-section-about-pre">
+    <section class="about-section" data-cy="hw1-section-about-pre">
         <select name="City" id="cities">
             <option value="Minsk">Minsk</option>
             <option value="Dobrush" selected>Dobrush</option>
@@ -28,47 +29,47 @@
             <option value="Grodno">Grodno</option>
         </select>
         <div data-cy="hw1-unordered-list-box-pre">
-             <h2>Любимые сериалы</h2>
-             <ul>
+             <h2 class="section-title">Любимые сериалы</h2>
+             <ul class="frameworks-list">
                 <li>Игра престолов</li>
                 <li>Сопрано</li>
                 <li>Как я встретил вашу маму</li>
              </ul>
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
-             <h2>Рейтинг любимых игр</h2>
-             <ol>
+             <h2 class="section-title">Рейтинг любимых игр</h2>
+             <ol class="books-list">
                 <li>The Witcher 3</li>
                 <li>Cyberpank 2077</li>
                 <li>Rust</li>
              </ol>
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
-                <label >
+            <h2 class="section-title">Мои скиллы</h2>
+                <label class="label">
                     <input type="checkbox" checked>
                     HTML
                 </label>
-                <label>
+                <label class="label">
                     <input type="checkbox">
                     CSS
                 </label>
-                <label>
+                <label class="label">
                     <input type="checkbox">
                     Javascript
                 </label>
-                <label>
+                <label class="label">
                     <input type="checkbox">
                     TypeScript
                 </label>
-                <label>
+                <label class="label">
                     <input type="checkbox">
                     React
                 </label>
         </div>
-         <input type="text" name="Skill" placeholder="Новый скилл">
-         <button>Добавить</button>
-         <hr>
+         <input class="text-field" type="text" name="Skill" placeholder="Новый скилл">
+         <button class="btn">Добавить</button>
+         <hr class="line">
         <table data-cy="hw-about-table-pre" border="2">
                             <tr>
                             <th>п/п</th>
@@ -98,7 +99,7 @@
     </section>
     
     <footer data-cy="hw-footer-pre">
-         <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
+         <a class="footer-link" href="https://it-incubator.io/" target="_blank">it-incubator</a>
     </footer>
 </body>
 </html>
