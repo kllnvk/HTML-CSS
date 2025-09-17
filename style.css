@@ -128,6 +128,7 @@ select {
 
 table {
     /* Стили для таблицы */
+    border: 1px solid rgba(48, 48, 48, 0.3);
     border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
@@ -136,7 +137,6 @@ table {
 th, td {
     /* Стили для ячеек таблицы */
     padding: 12px 14px 12px 14px;
-    border: 1px solid #95a1bb;
 }
 
 footer {
