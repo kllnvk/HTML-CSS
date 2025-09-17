@@ -46,7 +46,7 @@ header span {
 
 .main-image {
     /* Стили для изображения в первой секции */
-    min-width: 715px;
+    max-width: 715px;
 }
 
 
@@ -82,7 +82,7 @@ select {
     /* Стили для маркированного списка во второй секции */
     font-weight: 400;
     font-size: 16px;
-    padding-left: 25px;
+    padding: 0px 20px;
     list-style-image: url(./assets/rightArrow.svg);
 }
 
@@ -90,7 +90,7 @@ select {
     /* Стили для нумерованного списка во второй секции */
     font-weight: 400;
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 0px 25px;
 }
 
 .label {
@@ -136,13 +136,13 @@ table {
 
 th, td {
     /* Стили для ячеек таблицы */
-    padding: 12px 14px 12px 14px;
+    padding: 12px 15px 12px 15px;
 }
 
 footer {
     /* Стили для футера */
     background-color: rgba(163, 167, 255, 0.3);
-    padding: 26px 0 26px 1px;
+    padding: 26px 0px;
 }
 
 .footer-link {
