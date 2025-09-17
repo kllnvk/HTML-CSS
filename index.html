@@ -10,96 +10,103 @@
     <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
-<body>
-    <header>
-        <span>It-incubator</span>
+<body data-cy="hw2-body">
+    <header data-cy="hw2-header">
+        <span data-cy="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <section class="main-section" data-cy="hw1-section-main-pre">
-        <h1 class="main-title">Новик Кирилл Сергеевич</h1>
-        <p class="main-text">Начал учиться в инкубаторе, надеюсь всё будет круто! Люблю котиков, потому что они пушистые и мягкие</p>
-        <img class="main-image" src="./assets/Group.svg" alt="MainImage">
+    <section class="main-section" data-cy="hw2-section-main-pre">
+        <h1 class="main-title" data-cy="hw2-main-title">Новик Кирилл Сергеевич</h1>
+        <p class="main-text" data-cy="hw2-text">Начал учиться в инкубаторе, надеюсь всё будет круто! Люблю котиков, потому что они пушистые и мягкие</p>
+        <img class="main-image" data-cy="hw2-main-image" src="/assets/Group.svg" alt="Group">
     </section>
 
-    <section class="about-section" data-cy="hw1-section-about-pre">
-        <select name="City" id="cities">
-            <option value="Minsk">Minsk</option>
-            <option value="Dobrush" selected>Dobrush</option>
-            <option value="Homel">Homel</option>
-            <option value="Grodno">Grodno</option>
+    <section class="about-section" data-cy="hw2-section-about-pre">
+        <select data-cy="hw2-select-pre" name="" data-cy="">
+            <option value="">Paris</option>
+            <option value="" selected>Minsk</option>
+            <option value="">Milan</option>
         </select>
-        <div data-cy="hw1-unordered-list-box-pre">
-             <h2 class="section-title">Любимые сериалы</h2>
-             <ul class="frameworks-list">
-                <li>Игра престолов</li>
-                <li>Сопрано</li>
-                <li>Как я встретил вашу маму</li>
-             </ul>
+
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
+            <ul class="frameworks-list" data-cy="hw2-frameworks-list-pre">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
+            </ul>
         </div>
-        <div data-cy="hw1-ordered-list-box-pre">
-             <h2 class="section-title">Рейтинг любимых игр</h2>
-             <ol class="books-list">
-                <li>The Witcher 3</li>
-                <li>Cyberpank 2077</li>
-                <li>Rust</li>
-             </ol>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Рейтинг любимых книг</h2>
+            <ol class="books-list" data-cy="hw2-books-list-pre">
+                <li>HTML5+CSS3. Основы современного web-дизайна</li>
+                <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
+                <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
+            </ol>
         </div>
-        <div data-cy="hw1-skills-box-pre">
-            <h2 class="section-title">Мои скиллы</h2>
-                <label class="label">
-                    <input type="checkbox" checked>
-                    HTML
-                </label>
-                <label class="label">
-                    <input type="checkbox">
-                    CSS
-                </label>
-                <label class="label">
-                    <input type="checkbox">
-                    Javascript
-                </label>
-                <label class="label">
-                    <input type="checkbox">
-                    TypeScript
-                </label>
-                <label class="label">
-                    <input type="checkbox">
-                    React
-                </label>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
+            <label class="label" data-cy="hw2-label-pre" for="1">
+                <input type="checkbox" checked name="" id="1">
+                HTML5
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="2">
+                <input type="checkbox" checked name="" id="2">
+                CSS3
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="3">
+                <input type="checkbox" name="" id="3">
+                JavaScript
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="4">
+                <input type="checkbox" name="" id="4">
+                Jquery
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="5">
+                <input type="checkbox" name="" id="5">
+                React
+            </label>
         </div>
-         <input class="text-field" type="text" name="Skill" placeholder="Новый скилл">
-         <button class="btn">Добавить</button>
-         <hr class="line">
-        <table data-cy="hw-about-table-pre">
-                            <tr>
-                            <th>п/п</th>
-                            <th>Наименование</th>
-                            <th>Количество</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Монитор</td>
-                                <td>2</td>
-                            </tr>
-                             <tr>
-                                <td>2</td>
-                                <td>Клавиатура</td>
-                                <td>1</td>
-                            </tr>
-                             <tr>
-                                <td>3</td>
-                                <td>Мышь</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Итого:</td>
-                                <td>4</td>
-                            </tr>        
+        
+        <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
+        <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
+        
+        <hr class="line" data-cy="hw2-line-pre">
+
+        <table data-cy="hw2-about-table-pre" border="1">
+            <tr>
+                <th>п/п</th>
+                <th>Наименование</th>
+                <th>Количество</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Монитор</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Клавиатура</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Мышь</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Итого:</td>
+                <td>4</td>
+            </tr>
         </table>
     </section>
-    
+
     <footer data-cy="hw-footer-pre">
-         <a class="footer-link" href="https://it-incubator.io/" target="_blank">it-incubator</a>
+        <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
