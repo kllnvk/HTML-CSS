@@ -18,8 +18,8 @@ header {
 
 header span {
     /* Стили для текста в хедере IT-INCUBATOR */
-    font-weight: 700;
     font-size: 20px;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
 }
